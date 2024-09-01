@@ -77,4 +77,4 @@ function start(file) {
   }
 }
 
-start('web-pair.js');
+start('webs-pair.js');
