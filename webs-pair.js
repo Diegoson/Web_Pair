@@ -60,9 +60,6 @@ app.get('/', async (req, res) => {
 app.get('/qr', async (req, res) => {
   res.sendFile(path.join(__dirname, 'qr.html'));
 });
-app.get('/code', async (req, res) => {
-  res.sendFile(path.join(__dirname, 'pair.html'));
-});
 app.get('/pair', async (req, res) => {
   const phone = req.query.phone;
   if (!phone) return res.json({ error: 'Please Provide Phone Number' });
